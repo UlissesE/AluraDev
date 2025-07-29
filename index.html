@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDev</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <a href="#"><img src="/src/imgs/Logo.svg" alt="Logo"></a>
+        </div>
+        <div class="header-search">
+            <input type="text" name="search" id="search" placeholder="Busque por algo">
+        </div>
+        <div class="header-user">
+            <img src="/src/imgs/Usuario.svg" alt="">
+            <span>Usuário</span>
+        </div>
+    </header>
+    <section class="principal">
+
+        <nav>
+            <div class="navigation_box">
+                <h2 class="navigation_title">MENU</h2>
+                <ul class="navigation_itens">
+
+                    <li class="navigation_item">
+                        <a href="#" class="navigation_link">
+                            <div class="navigation_item_icon">
+                                <img src="/src/imgs/icon_code.svg" alt="">
+                            </div>
+                            <p class="navigation_item_text">Editor de código</p>
+                        </a>
+                    </li>
+
+                    <li class="navigation_item">
+                        <a  href="#" class="navigation_link">
+                            <div class="navigation_item_icon">
+                                <img src="/src/imgs/Font Awesome Icon.svg" alt="">
+                            </div>
+                            <p class="navigation_item_text">Comunidade</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <div class="editor_background">
+                <div class="editor_code_space">
+                    <div class="code_space_header">
+                        <div class="circle red"></div>
+                        <div class="circle yellow"></div>
+                        <div class="circle green"></div>
+                    </div>
+                    <textarea name="code" id="textarea-code" title="Editor de código" placeholder="Digite seu código aqui"></textarea>
+                </div>
+            </div>
+
+            <button type="button" class="highlight_button">
+                Visualizar com o highlight
+            </button>
+            
+        </main>
+
+        <aside>
+          <form class="project_form" id="project_form">
+            <div>
+                <h3>SEU PROJETO</h3>
+                <input type="text" name="project-name" id="project-name" placeholder="Nome do seu projeto">
+                <textarea name="project-description" id="project-description" placeholder="Descrição do seu projeto"></textarea>    
+            </div>
+
+            <div>
+
+                <label for="customization">PERSONALIZAÇÃO</label>
+                <select name="customization" id="customization">
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="c">C</option>
+                    <option value="c++">C+</option>
+                    <option value="c#">C#</option>
+                    <option value="python">Python</option>
+                    <option value="php">PHP</option>
+                <option value="swift">Swift</option>
+                <option value="go">Go</option>
+                <option value="sql">SQL</option>
+            </select>
+            
+            <input type="color" id="project-color" name="project-color" title="Escolha a cor do projeto">
+        </div>
+
+            <button type="submit" id="save_project">Salvar projeto</button>
+          </form>
+        </aside>
+        
+    </section>
+    </body>
+    </html>
