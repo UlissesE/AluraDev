@@ -105,7 +105,7 @@ const ui = {
     heartImage.alt = "";
 
     const heartsQtd = document.createElement("span");
-    heartsQtd.textContent = "9";
+    heartsQtd.textContent = "0";
 
     const iconSpaceComment = document.createElement("div");
     iconSpaceComment.classList.add("icon_space");
@@ -115,7 +115,7 @@ const ui = {
     commentImage.alt = "";
 
     const commentsQtd = document.createElement("span");
-    commentsQtd.textContent = "8";
+    commentsQtd.textContent = "0";
 
     iconSpaceComment.append(commentImage, commentsQtd);
     iconSpaceHeart.append(heartImage, heartsQtd);

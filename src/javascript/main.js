@@ -1,5 +1,4 @@
 import api from "./api.js"
-import ui from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -35,6 +34,7 @@ async function upCode(event) {
 
     try {
         await api.postCode({name, description, language, rgb, code})
+        alert("Código postado com sucesso");
     } catch (error) {
         alert("Erro ao subir código")
     }
