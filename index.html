@@ -70,7 +70,34 @@
         </main>
 
         <aside>
-          
+          <form class="project_form" id="project_form">
+            <div>
+                <h3>SEU PROJETO</h3>
+                <input type="text" name="project-name" id="project-name" placeholder="Nome do seu projeto">
+                <textarea name="project-description" id="project-description" placeholder="Descrição do seu projeto"></textarea>    
+            </div>
+
+            <div>
+
+                <label for="customization">PERSONALIZAÇÃO</label>
+                <select name="customization" id="customization">
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="c">C</option>
+                    <option value="c++">C+</option>
+                    <option value="c#">C#</option>
+                    <option value="python">Python</option>
+                    <option value="php">PHP</option>
+                <option value="swift">Swift</option>
+                <option value="go">Go</option>
+                <option value="sql">SQL</option>
+            </select>
+            
+            <input type="color" id="project-color" name="project-color" title="Escolha a cor do projeto">
+        </div>
+
+            <button type="submit" id="save_project">Salvar projeto</button>
+          </form>
         </aside>
         
     </section>
