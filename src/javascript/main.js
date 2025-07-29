@@ -1,4 +1,5 @@
 import api from "./api.js"
+import ui from "./ui.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -38,3 +39,4 @@ async function upCode(event) {
         alert("Erro ao subir código")
     }
 }
+

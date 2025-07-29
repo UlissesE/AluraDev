@@ -12,8 +12,21 @@ const api = {
             throw Error
         }
     },
-    async getPostsById(id) {
+    async getPostsBySearch(termo) {
+        try {
+            const codes = await this.getPosts();
+            const formatedTermo = termo.toLowerCase();
 
+            const filtredCodes = codes.filter(code => {
+                return code.name.toLowerCase().includes(formatedTermo) ||
+                code.description.toLowerCase().includes(formatedTermo) || 
+                code.language.toLowerCase().includes(formatedTermo)
+            })
+            return filtredCodes;
+        } catch (error) {
+            alert("Erro ao realizar a busca por termo.");
+            throw Error
+        }
     },
     async postCode(code) {
         try {

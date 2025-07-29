@@ -1,12 +1,21 @@
 import api from "./api.js";
 
 const ui = {
-  async renderCodes() {
+  async renderCodes(filtredCodes = null) {
     const postList = document.getElementById("post-list");
-    postList.innerHTML = "";
     const codeList = await api.getPosts();
+    postList.innerHTML = "";
 
-    codeList.forEach((code) => ui.addCodeOnPostList(code));
+    try {
+        let codesToRender;
+        if (!filtredCodes) {
+            filtredCodes = await api.getPosts()
+        }
+        filtredCodes.forEach(ui.addCodeOnPostList);
+    } catch (error) {
+
+    }
+
   },
   addCodeOnPostList(code) {
     const postList = document.getElementById("post-list");
