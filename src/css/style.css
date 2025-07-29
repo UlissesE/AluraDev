@@ -85,6 +85,7 @@ header {
     background-color: transparent;
     color: var(--font-color);
     font-size: 1.3rem;
+    text-decoration: none;
 }
 
 .navigation_item_icon {
