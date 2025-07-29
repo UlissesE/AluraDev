@@ -3,7 +3,24 @@ import api from "./api.js"
 document.addEventListener("DOMContentLoaded", () => {
 
     const form = document.getElementById('project_form');
+
+    const rgb = document.getElementById("project-color");;
+    rgb.value = "#6BD1FF";
     
+    const background = document.getElementById('background-codespace');
+
+    rgb.addEventListener("focus", () => {
+        const updateBackground = () => {
+            background.style.backgroundColor = rgb.value;
+        }
+        rgb.addEventListener("input", updateBackground);
+        const blurHandler = () => {
+            rgb.removeEventListener('input', updateBackground);
+            rgb.removeEventListener('blur', blurHandler);
+        }
+        rgb.addEventListener("blur", blurHandler)
+    })
+
     form.addEventListener("submit", upCode)
 })
 
