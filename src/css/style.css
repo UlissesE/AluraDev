@@ -123,7 +123,7 @@ header {
     gap: 2rem;
 }
 
-.projects_posts {
+.post_list {
     display: flex;
     flex-direction: row;
     gap: 2rem;
