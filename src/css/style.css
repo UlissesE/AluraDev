@@ -348,3 +348,9 @@ header {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.post_language {
+    font-weight: bolder;
+    border-bottom: 1px solid var(--secundary-color);
+    max-width: fit-content;
+}

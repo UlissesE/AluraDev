@@ -80,7 +80,11 @@ const ui = {
     const postText = document.createElement("p");
     postText.textContent = code.description;
 
-    postContent.append(postTitle, postText);
+    const postLanguage = document.createElement("p");
+    postLanguage.classList.add("post_language")
+    postLanguage.textContent = code.language;
+
+    postContent.append(postTitle, postText, postLanguage);
 
     //////////////////////////////////////////////////
     //////////////////////////////////////////////////
