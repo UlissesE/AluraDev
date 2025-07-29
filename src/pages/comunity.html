@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev Comunidade</title>
     <link rel="stylesheet" href="/src/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -63,7 +65,8 @@
                                 <div class="circle yellow"></div>
                                 <div class="circle green"></div>
                             </div>
-                            <p name="code" id="post-code" title="Editor de código" placeholder="Digite seu código aqui">
+                            <p name="code" class="post_code" id="post-code" title="Editor de código"
+                                placeholder="Digite seu código aqui">
                                 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                             </p>
                         </div>
@@ -99,7 +102,8 @@
                                 <div class="circle yellow"></div>
                                 <div class="circle green"></div>
                             </div>
-                            <p name="code" id="post-code" title="Editor de código" placeholder="Digite seu código aqui"></p>
+                            <p name="code" class="post_code" id="post-code" title="Editor de código"
+                                placeholder="Digite seu código aqui"></p>
                         </div>
                     </div>
                     <div class="post_description">
@@ -125,45 +129,83 @@
                         </div>
                     </div>
                 </li>
+
+
+
+
+
+
+
+
                 <li class="post">
+
                     <div class="post_background">
+
                         <div class="post_code_space">
+
                             <div class="code_space_header">
                                 <div class="circle red"></div>
                                 <div class="circle yellow"></div>
                                 <div class="circle green"></div>
                             </div>
-                            <p name="code" id="post-code" title="Editor de código" placeholder="Digite seu código aqui"></p>
+
+                            <p name="code" class="post_code" id="post-code" title="Editor de código"
+                                placeholder="Digite seu código aqui"></p>
+
                         </div>
+
                     </div>
+
                     <div class="post_description">
-                        <div class="post_text">
+
+                        <div class="post_content">
+
                             <h2>Título do projeto</h2>
                             <p>Descrição</p>
+
                         </div>
+
                         <div class="card_actions">
+
                             <div class="card_actions_components">
+
                                 <div class="icon_space">
-                                <img src="/src/imgs/heart.png" alt="">
-                                <span>9</span>
+                                    <img src="/src/imgs/heart.png" alt="">
+                                    <span>9</span>
+
+                                    <div class="icon_space">
+
+                                        <img src="/src/imgs/comment.png" alt="">
+                                        <span>9</span>
+
+                                    </div>
+
+                                </div>
+
+
                             </div>
-                            <div class="icon_space">
-                                <img src="/src/imgs/comment.png" alt="">
-                                <span>9</span>
+
+                            <div class="post_profile">
+
+                                <img src="/src/imgs/Usuario.svg" alt="">
+                                <span>Nome</span>
+
                             </div>
+
                         </div>
-                        <div class="post_profile">
-                            <img src="/src/imgs/Usuario.svg" alt="">
-                            <span>Nome</span>
-                        </div>
-                    </div>
+
                 </li>
             </ul>
-            
-        </ul>
+
+            </ul>
         </main>
-        
+
     </section>
+
+    <script type="module" src="../javascript/comunity.js"></script>
+    <script type="module" src="../javascript/api.js"></script>
+    <script type="module" src="../javascript/ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 </body>
 
 </html>
