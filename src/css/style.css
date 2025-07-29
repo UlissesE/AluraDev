@@ -267,7 +267,7 @@ header {
 .post_code_space {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+    gap: 1rem;
   width: 90%;
   height: 80%;
   background-color: black;
@@ -276,13 +276,15 @@ header {
 }
 
 .post_code {
-  font-family: "Fira Mono", "Consolas", "Courier New", monospace;
-  font-size: 1rem;
-  background: none;
-  color: #fff;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-break: break-word;
+    font-family: "Fira Mono", "Consolas", "Courier New", monospace;
+    font-size: 1rem;
+    background: none;
+    color: #fff;
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 100%;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 .post_code code {
@@ -325,4 +327,24 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

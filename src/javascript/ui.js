@@ -20,6 +20,7 @@ const ui = {
 
     const postBackground = document.createElement("div");
     postBackground.classList.add("post_background");
+    postBackground.style.backgroundColor = code.rgb
 
     const postCodeSpace = document.createElement("div");
     postCodeSpace.classList.add("post_code_space");
