@@ -2,7 +2,7 @@
 
 :root {
     --input-background: #FFFFFF29;
-    --font-color: #FFFFFF;
+    --font-color: #FFFFFF; 
     --primary-color: #5081FB;
     --secundary-color: #6BD1FF;
 }
@@ -76,6 +76,14 @@ header {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.navigation_item {
+    opacity: 56%;
+}
+
+.active {
+    opacity: 100%;
 }
 
 .navigation_link {
