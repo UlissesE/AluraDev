@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ui.renderCodes();
 
     const inputSearch = document.getElementById("search");
-
     inputSearch.addEventListener("input", searchPost)
 })
 

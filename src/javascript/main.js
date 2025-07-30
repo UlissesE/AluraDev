@@ -1,38 +1,44 @@
 import api from "./api.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("project_form");
+  inicializarCorProjeto();
+  inicializarHighlightButton();
+  inicializarForm();
+});
 
+function inicializarCorProjeto() {
   const rgb = document.getElementById("project-color");
-  rgb.value = "#6BD1FF";
-
   const background = document.getElementById("background-codespace");
+  rgb.value = "#6BD1FF";
 
   rgb.addEventListener("focus", () => {
     const updateBackground = () => {
       background.style.backgroundColor = rgb.value;
     };
     rgb.addEventListener("input", updateBackground);
+
     const blurHandler = () => {
       rgb.removeEventListener("input", updateBackground);
       rgb.removeEventListener("blur", blurHandler);
     };
     rgb.addEventListener("blur", blurHandler);
   });
+}
 
+function inicializarHighlightButton() {
   const highlightButton = document.getElementById("highlight-button");
   const textarea = document.getElementById("textarea-code");
 
   highlightButton.addEventListener("click", () => {
-    if (textarea.style.color === "yellow") {
-      textarea.style.color = "white";
-    } else {
-      textarea.style.color = "yellow";
-    }
+    textarea.style.color =
+      textarea.style.color === "yellow" ? "white" : "yellow";
   });
+}
 
+function inicializarForm() {
+  const form = document.getElementById("project_form");
   form.addEventListener("submit", upCode);
-});
+}
 
 async function upCode(event) {
   event.preventDefault();
