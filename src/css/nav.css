@@ -52,3 +52,19 @@
   width: 30px;
   height: auto;
 }
+
+/* Responsividade para navegação */
+@media (max-width: 1200px) {
+  .principal nav {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+}
+@media (max-width: 900px) {
+  .navigation_box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}

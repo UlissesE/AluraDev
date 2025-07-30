@@ -184,3 +184,59 @@
   border-bottom: 1px solid var(--secundary-color);
   max-width: fit-content;
 }
+
+/* Responsividade para main e posts */
+@media (max-width: 1200px) {
+  .principal {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .principal .code_editor,
+  .principal .projects_posts {
+    width: 100%;
+  }
+  .post {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .editor_code_space,
+  .post_code_space {
+    width: 100%;
+    padding: 8px;
+  }
+  .post {
+    height: auto;
+    min-height: 300px;
+  }
+  .post_background {
+    height: auto;
+    min-height: 120px;
+    padding: 0.5rem 0;
+  }
+  .post_code {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+  .card_actions_components {
+    gap: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  .editor_code_space,
+  .post_code_space {
+    border-radius: 4px;
+    padding: 4px;
+  }
+  .highlight_button {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+  .post_content h2 {
+    font-size: 1.1rem;
+  }
+  .post_language {
+    font-size: 0.9rem;
+  }
+}

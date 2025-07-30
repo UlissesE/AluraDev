@@ -49,3 +49,19 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* Responsividade para aside e formulário */
+@media (max-width: 1200px) {
+  .principal aside {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media (max-width: 500px) {
+  .project_form {
+    gap: 1.5rem;
+  }
+  #project-color {
+    height: 2.5rem;
+  }
+}
