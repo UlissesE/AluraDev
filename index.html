@@ -29,8 +29,8 @@
                 <h2 class="navigation_title">MENU</h2>
                 <ul class="navigation_itens">
 
-                    <li class="navigation_item">
-                        <a href="#" class="navigation_link">
+                    <li class="navigation_item active">
+                        <a href="./index.html" class="navigation_link">
                             <div class="navigation_item_icon">
                                 <img src="/src/imgs/icon_code.svg" alt="">
                             </div>
@@ -39,7 +39,7 @@
                     </li>
 
                     <li class="navigation_item">
-                        <a  href="#" class="navigation_link">
+                        <a  href="./src/pages/comunity.html" class="navigation_link">
                             <div class="navigation_item_icon">
                                 <img src="/src/imgs/Font Awesome Icon.svg" alt="">
                             </div>
@@ -51,9 +51,9 @@
             </div>
         </nav>
 
-        <main>
-            <div class="editor_background">
-                <div class="editor_code_space">
+        <main class="code_editor">
+            <div class="editor_background" id="background-codespace">
+                <div class="editor_code_space" >
                     <div class="code_space_header">
                         <div class="circle red"></div>
                         <div class="circle yellow"></div>
@@ -63,7 +63,7 @@
                 </div>
             </div>
 
-            <button type="button" class="highlight_button">
+            <button type="button" class="highlight_button" id="highlight-button">
                 Visualizar com o highlight
             </button>
             
@@ -73,6 +73,7 @@
           <form class="project_form" id="project_form">
             <div>
                 <h3>SEU PROJETO</h3>
+                <input type="hidden" name="id" id="code-id">
                 <input type="text" name="project-name" id="project-name" placeholder="Nome do seu projeto">
                 <textarea name="project-description" id="project-description" placeholder="Descrição do seu projeto"></textarea>    
             </div>
@@ -101,5 +102,9 @@
         </aside>
         
     </section>
+
+    <script type="module" src="/src/javascript/main.js"></script>
+    <script type="module" src="/src/javascript/api.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     </body>
     </html>
