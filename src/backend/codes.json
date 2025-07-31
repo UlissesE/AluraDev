@@ -175,6 +175,14 @@
       "language": "javascript",
       "rgb": "#0dadf2",
       "code": ".header-search::after {\n    content: '';\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    width: 0;\n    height: 2px;\n    background-color: var(--font-color);\n    transition: width 0.3s ease;\n}\n\n.header-search:hover::after {\n    width: 100%;\n}"
+    },
+    {
+      "id": "a864",
+      "name": "If else",
+      "description": "Só um if else",
+      "language": "javascript",
+      "rgb": "#06ea2c",
+      "code": "    if (width <= 500) {\n        inputSearch = document.getElementById(\"search_3\");\n    } else if (width <= 1200) {\n        inputSearch = document.getElementById(\"search_2\");\n    } else {\n        inputSearch = document.getElementById(\"search_1\");\n    }"
     }
   ]
 }

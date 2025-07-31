@@ -6,28 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraDev Comunidade</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
+    <div class="filtro" id="filtro"></div>
     <header>
-        <div class="header-logo">
-            <a href="#"><img src="/src/imgs/Logo.svg" alt="Logo"></a>
+        <!-- HEADER DESKTOP -->
+        <div class="header_desktop">
+            <div class="header-logo">
+                <a href="../../index.html"><img src="../imgs/Logo.svg" alt="Logo"></a>
+            </div>
+            <div class="header-search">
+                <input type="text" name="search" id="search_1" placeholder="Busque por algo" class="search">
+            </div>
+            <div class="header-user">
+                <img src="../imgs/Usuario.svg" alt="">
+                <span>Usuário</span>
+            </div>
         </div>
-        <div class="header-search">
-            <input type="text" name="search" id="search" placeholder="Busque por algo">
+
+        <!-- HEADER SMARTPHONE -->
+        <div class="header_smartphone">
+            <div class="header_smartphone_content">
+                <div class="header-logo">
+                    <a href="../../index.html"><img src="../imgs/Logo.svg" alt="Logo"></a>
+                </div>
+                <div class="menu_hamburguer">
+                    <div class="menu_hamburguer_menu">
+                        <img src="../imgs/search.png" alt="" id="search_icon">
+                        <img src="../imgs/hamburguer-menu.png" alt="" class="hamburger_icon" id="hamburger_icon_cell">
+                    </div>
+                </div>
+            </div>
+            <div class="header-search" id="header-search-phone">
+                <input type="text" name="search" id="search_2" placeholder="Busque por algo" class="search">
+            </div>
         </div>
-        <div class="header-user">
-            <img src="/src/imgs/Usuario.svg" alt="">
-            <span>Usuário</span>
+
+        <!-- HEADER TABLET -->
+        <div class="header_tablet">
+            <div class="header-logo">
+                <a href="../../index.html"><img src="../imgs/Logo.svg" alt="Logo"></a>
+            </div>
+            <div class="header-search">
+                <input type="text" name="search" id="search_3" placeholder="Busque por algo" class="search">
+            </div>
+            <div class="menu_hamburguer_menu">
+                <img src="../imgs/hamburguer-menu.png" alt="" class="hamgurger_icon" id="hamburger_icon_tablet">
+            </div>
+
         </div>
     </header>
     <section class="principal">
 
         <nav>
             <div class="navigation_box">
+
                 <h2 class="navigation_title">MENU</h2>
                 <ul class="navigation_itens">
 

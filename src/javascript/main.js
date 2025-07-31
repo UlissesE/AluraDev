@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   inicializarCorProjeto();
   inicializarHighlightButton();
   inicializarForm();
+  inicializarMenuHamburguer();
 });
 
 function inicializarCorProjeto() {
@@ -54,4 +55,35 @@ async function upCode(event) {
   } catch (error) {
     alert("Erro ao subir código");
   }
+}
+
+function inicializarMenuHamburguer() {
+  const width = window.innerWidth;
+  let hamburger_menu;
+  width <= 500
+    ? (hamburger_menu = document.getElementById("hamburger_icon_cell"))
+    : (hamburger_menu = document.getElementById("hamburger_icon_tablet"));
+  hamburger_menu.addEventListener("click", () => {
+    const nav = document.querySelector(".navigation_box");
+    const blackFilter = document.getElementById("filtro");
+
+    if (nav.style.display === "flex") {
+      nav.style.display = "none";
+      blackFilter.style.display = "none";
+      console.log(blackFilter.style.display);
+    } else {
+      nav.style.display = "flex";
+      blackFilter.style.display = "block";
+    }
+
+    blackFilter.onclick = () => {
+      if (nav.style.display === "flex") {
+        nav.style.display = "none";
+        blackFilter.style.display = "none";
+      } else {
+        nav.style.display = "flex";
+        blackFilter.style.display = "block";
+      }
+    };
+  });
 }

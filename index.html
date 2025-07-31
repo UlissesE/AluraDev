@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,23 +8,62 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+    <div class="filtro" id="filtro"></div>
     <header>
-        <div class="header-logo">
-            <a href="#"><img src="/src/imgs/Logo.svg" alt="Logo"></a>
+        <!-- HEADER DESKTOP -->
+        <div class="header_desktop">
+            <div class="header-logo">
+                <a href="./index.html"><img src="./src/imgs/Logo.svg" alt="Logo"></a>
+            </div>
+            <div class="header-search">
+                <input type="text" name="search" id="search_1" placeholder="Busque por algo" class="search">
+            </div>
+            <div class="header-user">
+                <img src="./src/imgs/Usuario.svg" alt="">
+                <span>Usuário</span>
+            </div>
         </div>
-        <div class="header-search">
-            <input type="text" name="search" id="search" placeholder="Busque por algo">
+
+        <!-- HEADER SMARTPHONE -->
+        <div class="header_smartphone">
+            <div class="header_smartphone_content">
+                <div class="header-logo">
+                    <a href="./index.html"><img src="./src/imgs/Logo.svg" alt="Logo"></a>
+                </div>
+                <div class="menu_hamburguer">
+                    <div class="menu_hamburguer_menu">
+                        <img src="./src/imgs/search.png" alt="" id="search_icon">
+                        <img src="./src/imgs/hamburguer-menu.png" alt="" class="hamgurger_icon"
+                            id="hamburger_icon_cell">
+                    </div>
+                </div>
+            </div>
+            <div class="header-search" id="header-search-phone">
+                <input type="text" name="search" id="search_2" placeholder="Busque por algo" class="search">
+            </div>
         </div>
-        <div class="header-user">
-            <img src="/src/imgs/Usuario.svg" alt="">
-            <span>Usuário</span>
+
+        <!-- HEADER TABLET -->
+        <div class="header_tablet">
+            <div class="header-logo">
+                <a href="./index.html"><img src="./src/imgs/Logo.svg" alt="Logo"></a>
+            </div>
+            <div class="header-search">
+                <input type="text" name="search" id="search_3" placeholder="Busque por algo" class="search">
+            </div>
+            <div class="menu_hamburguer_menu">
+                <img src="./src/imgs/hamburguer-menu.png" alt="" class="hamgurger_icon" id="hamburger_icon_tablet">
+            </div>
+
         </div>
     </header>
     <section class="principal">
-
         <nav>
             <div class="navigation_box">
                 <h2 class="navigation_title">MENU</h2>
@@ -39,7 +79,7 @@
                     </li>
 
                     <li class="navigation_item">
-                        <a  href="./src/pages/comunity.html" class="navigation_link">
+                        <a href="./src/pages/comunity.html" class="navigation_link">
                             <div class="navigation_item_icon">
                                 <img src="/src/imgs/Font Awesome Icon.svg" alt="">
                             </div>
@@ -53,58 +93,61 @@
 
         <main class="code_editor">
             <div class="editor_background" id="background-codespace">
-                <div class="editor_code_space" >
+                <div class="editor_code_space">
                     <div class="code_space_header">
                         <div class="circle red"></div>
                         <div class="circle yellow"></div>
                         <div class="circle green"></div>
                     </div>
-                    <textarea name="code" id="textarea-code" title="Editor de código" placeholder="Digite seu código aqui"></textarea>
+                    <textarea name="code" id="textarea-code" title="Editor de código"
+                        placeholder="Digite seu código aqui"></textarea>
                 </div>
             </div>
 
             <button type="button" class="highlight_button" id="highlight-button">
                 Visualizar com o highlight
             </button>
-            
+
         </main>
 
         <aside>
-          <form class="project_form" id="project_form">
-            <div>
-                <h3>SEU PROJETO</h3>
-                <input type="hidden" name="id" id="code-id">
-                <input type="text" name="project-name" id="project-name" placeholder="Nome do seu projeto">
-                <textarea name="project-description" id="project-description" placeholder="Descrição do seu projeto"></textarea>    
-            </div>
+            <form class="project_form" id="project_form">
+                <div>
+                    <h3>SEU PROJETO</h3>
+                    <input type="hidden" name="id" id="code-id">
+                    <input type="text" name="project-name" id="project-name" placeholder="Nome do seu projeto">
+                    <textarea name="project-description" id="project-description"
+                        placeholder="Descrição do seu projeto"></textarea>
+                </div>
 
-            <div>
+                <div>
 
-                <label for="customization">PERSONALIZAÇÃO</label>
-                <select name="customization" id="customization">
-                    <option value="javascript">JavaScript</option>
-                    <option value="java">Java</option>
-                    <option value="c">C</option>
-                    <option value="c++">C+</option>
-                    <option value="c#">C#</option>
-                    <option value="python">Python</option>
-                    <option value="php">PHP</option>
-                <option value="swift">Swift</option>
-                <option value="go">Go</option>
-                <option value="sql">SQL</option>
-            </select>
-            
-            <input type="color" id="project-color" name="project-color" title="Escolha a cor do projeto">
-        </div>
+                    <label for="customization">PERSONALIZAÇÃO</label>
+                    <select name="customization" id="customization">
+                        <option value="javascript">JavaScript</option>
+                        <option value="java">Java</option>
+                        <option value="c">C</option>
+                        <option value="c++">C+</option>
+                        <option value="c#">C#</option>
+                        <option value="python">Python</option>
+                        <option value="php">PHP</option>
+                        <option value="swift">Swift</option>
+                        <option value="go">Go</option>
+                        <option value="sql">SQL</option>
+                    </select>
 
-            <button type="submit" id="save_project">Salvar projeto</button>
-          </form>
+                    <input type="color" id="project-color" name="project-color" title="Escolha a cor do projeto">
+                </div>
+
+                <button type="submit" id="save_project">Salvar projeto</button>
+            </form>
         </aside>
-        
+
     </section>
 
     <script type="module" src="/src/javascript/main.js"></script>
     <script type="module" src="/src/javascript/api.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-    </body>
-    </html>
+</body>
+
+</html>

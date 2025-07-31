@@ -2,7 +2,6 @@
   width: 25%;
   padding-left: 2rem;
   box-sizing: border-box;
-  
 }
 
 .project_form {
@@ -70,7 +69,6 @@
   transform: scale(1.01);
 }
 
-/* Responsividade para aside e formulário */
 @media (max-width: 1200px) {
   .principal aside {
     width: 100%;
