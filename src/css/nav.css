@@ -1,12 +1,12 @@
 .principal nav {
   width: 25%;
   height: 100vh;
+  z-index: 1;
 }
 
 .navigation_box {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   gap: 2rem;
 }
 
@@ -38,6 +38,11 @@
   color: var(--font-color);
   font-size: 1.3rem;
   text-decoration: none;
+  transition: 0.1s all;
+}
+
+.navigation_link:hover {
+  transform: scale(1.01);
 }
 
 .navigation_item_icon {
@@ -53,18 +58,28 @@
   height: auto;
 }
 
-/* Responsividade para navegação */
+@media (min-width: 1201px) {
+  .navigation_box {
+    justify-content: space-around;
+  }
+}
+
 @media (max-width: 1200px) {
   .principal nav {
     width: 100%;
     height: auto;
     padding-left: 0;
   }
-}
-@media (max-width: 900px) {
   .navigation_box {
-    flex-direction: row;
+    display: none;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 4rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #001435;
+    height: 100%;
+    padding: 15vh 2vh 2vh 2vh;
   }
 }

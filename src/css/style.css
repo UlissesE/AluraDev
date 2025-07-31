@@ -12,8 +12,20 @@
 }
 
 body {
-  background-image: linear-gradient(to left, #062c5a, #000307);
-  padding: 1rem 2rem;
+  background-image: linear-gradient(0deg, #020341, #000c1f);
+  padding-top: 6rem;
+}
+
+.filtro {
+  transition: 0.2s all;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  opacity: 80%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 /* Scrollbar */
@@ -28,10 +40,4 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
-}
-
-@media (max-width: 500px) {
-  body {
-    padding: 0.5rem;
-  }
 }
