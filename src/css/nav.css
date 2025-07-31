@@ -38,6 +38,11 @@
   color: var(--font-color);
   font-size: 1.3rem;
   text-decoration: none;
+  transition: 0.1s all;
+}
+
+.navigation_link:hover {
+  transform: scale(1.01);
 }
 
 .navigation_item_icon {

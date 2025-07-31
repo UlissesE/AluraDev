@@ -10,6 +10,7 @@ header {
 }
 .header-search {
   width: 50%;
+  position: relative;
 }
 #search {
   background-color: var(--input-background);
@@ -19,7 +20,9 @@ header {
   border-radius: 8px;
   color: var(--font-color);
   box-sizing: border-box;
+  position: relative;
 }
+
 .header-user {
   display: flex;
   flex-direction: row;

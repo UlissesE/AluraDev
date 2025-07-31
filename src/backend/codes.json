@@ -1,166 +1,180 @@
 {
   "codes": [
-  {
-    "id": 1,
-    "name": "ToDo List App",
-    "description": "Aplicativo simples de lista de tarefas com adição e remoção dinâmica.",
-    "language": "JavaScript",
-    "rgb": "#f7df1e",
-    "code": "const tasks = [];\nfunction addTask(task) {\n  tasks.push(task);\n}\naddTask('Estudar');\nconsole.log(tasks);"
-  },
-  {
-    "id": 2,
-    "name": "Calculadora CLI",
-    "description": "Calculadora simples em terminal com operações básicas.",
-    "language": "Python",
-    "rgb": "#3572A5",
-    "code": "def soma(a, b):\n  return a + b\nprint(soma(2, 3))"
-  },
-  {
-    "id": 3,
-    "name": "API de Produtos",
-    "description": "API REST para gerenciamento de produtos.",
-    "language": "Java",
-    "rgb": "#b07219",
-    "code": "public class Produto {\n  private String nome;\n  public Produto(String nome) {\n    this.nome = nome;\n  }\n}"
-  },
-  {
-    "id": 4,
-    "name": "App de Clima",
-    "description": "Aplicativo que mostra a previsão do tempo atual.",
-    "language": "Swift",
-    "rgb": "#f05138",
-    "code": "import SwiftUI\nText(\"Clima Atual: Ensolarado\")"
-  },
-  {
-    "id": 5,
-    "name": "Conversor de Temperatura",
-    "description": "Converte Celsius para Fahrenheit.",
-    "language": "C",
-    "rgb": "#555555",
-    "code": "#include <stdio.h>\nint main() {\n  float c = 25;\n  printf(\"%.2f\", c * 9 / 5 + 32);\n  return 0;\n}"
-  },
-  {
-    "id": 6,
-    "name": "Jogo da Adivinhação",
-    "description": "Usuário tenta adivinhar um número secreto.",
-    "language": "C++",
-    "rgb": "#f34b7d",
-    "code": "#include <iostream>\nint main() {\n  int num = 7;\n  std::cout << \"Adivinhe o número: \";\n}"
-  },
-  {
-    "id": 7,
-    "name": "Validador de Email",
-    "description": "Verifica se um e-mail é válido.",
-    "language": "C#",
-    "rgb": "#178600",
-    "code": "using System;\nclass Email {\n  static void Main() {\n    Console.WriteLine(\"Validar Email\");\n  }\n}"
-  },
-  {
-    "id": 8,
-    "name": "Blog em PHP",
-    "description": "Sistema simples de blog com postagens e comentários.",
-    "language": "PHP",
-    "rgb": "#4F5D95",
-    "code": "<?php\n  echo 'Olá, blog!';\n?>"
-  },
-  {
-    "id": 9,
-    "name": "Consulta de Clientes",
-    "description": "Executa uma consulta em banco de dados SQL.",
-    "language": "SQL",
-    "rgb": "#e38c00",
-    "code": "SELECT * FROM clientes WHERE ativo = 1;"
-  },
-  {
-    "id": 10,
-    "name": "Servidor Web",
-    "description": "Servidor HTTP simples em Go.",
-    "language": "Go",
-    "rgb": "#00ADD8",
-    "code": "package main\nimport \"fmt\"\nfunc main() {\n  fmt.Println(\"Servidor iniciado\")\n}"
-  },
-
-  {
-    "id": 11,
-    "name": "Chat em Tempo Real",
-    "description": "App de chat com sockets.",
-    "language": "JavaScript",
-    "rgb": "#f7df1e",
-    "code": "const socket = io();\nsocket.emit('mensagem', 'Oi!');"
-  },
-  {
-    "id": 12,
-    "name": "Bot Telegram",
-    "description": "Bot que responde mensagens automaticamente.",
-    "language": "Python",
-    "rgb": "#3572A5",
-    "code": "from telegram import Bot\nbot = Bot('TOKEN')\nbot.send_message(chat_id=123, text='Olá')"
-  },
-  {
-    "id": 13,
-    "name": "Gerador de PDF",
-    "description": "Cria relatórios PDF com dados.",
-    "language": "Java",
-    "rgb": "#b07219",
-    "code": "Document doc = new Document();\nPdfWriter.getInstance(doc, new FileOutputStream(\"relatorio.pdf\"));"
-  },
-  {
-    "id": 14,
-    "name": "Timer para Meditação",
-    "description": "App de cronômetro com som relaxante.",
-    "language": "Swift",
-    "rgb": "#f05138",
-    "code": "Timer.scheduledTimer(withTimeInterval: 60, repeats: false) {_ in print(\"Tempo esgotado\") }"
-  },
-  {
-    "id": 15,
-    "name": "Gerador de Senhas",
-    "description": "Cria senhas seguras aleatórias.",
-    "language": "C",
-    "rgb": "#555555",
-    "code": "#include <stdlib.h>\nprintf(\"Senha: %d\", rand());"
-  },
-  {
-    "id": 16,
-    "name": "CRUD de Alunos",
-    "description": "CRUD completo de alunos no terminal.",
-    "language": "C++",
-    "rgb": "#f34b7d",
-    "code": "class Aluno {\n  string nome;\n};"
-  },
-  {
-    "id": 17,
-    "name": "Conversor Moeda",
-    "description": "Converte reais em dólar com cotação ao vivo.",
-    "language": "C#",
-    "rgb": "#178600",
-    "code": "decimal reais = 10;\nConsole.WriteLine(reais / 5.2M);"
-  },
-  {
-    "id": 18,
-    "name": "Loja Virtual",
-    "description": "Plataforma de e-commerce básica.",
-    "language": "PHP",
-    "rgb": "#4F5D95",
-    "code": "<?php echo 'Bem-vindo à loja!'; ?>"
-  },
-  {
-    "id": 19,
-    "name": "Criação de Tabelas",
-    "description": "Cria estrutura inicial de banco de dados.",
-    "language": "SQL",
-    "rgb": "#e38c00",
-    "code": "CREATE TABLE produtos (id INT, nome VARCHAR(100));"
-  },
-  {
-    "id": 20,
-    "name": "Monitoramento de APIs",
-    "description": "Verifica se endpoints estão funcionando.",
-    "language": "Go",
-    "rgb": "#00ADD8",
-    "code": "resp, err := http.Get(\"https://api\")\nif err != nil { log.Fatal(err) }"
-  }
-]
-
+    {
+      "id": "1",
+      "name": "ToDo List App",
+      "description": "Aplicativo simples de lista de tarefas com adição e remoção dinâmica.",
+      "language": "JavaScript",
+      "rgb": "#f7df1e",
+      "code": "const tasks = [];\nfunction addTask(task) {\n  tasks.push(task);\n}\naddTask('Estudar');\nconsole.log(tasks);"
+    },
+    {
+      "id": "2",
+      "name": "Calculadora CLI",
+      "description": "Calculadora simples em terminal com operações básicas.",
+      "language": "Python",
+      "rgb": "#3572A5",
+      "code": "def soma(a, b):\n  return a + b\nprint(soma(2, 3))"
+    },
+    {
+      "id": "3",
+      "name": "API de Produtos",
+      "description": "API REST para gerenciamento de produtos.",
+      "language": "Java",
+      "rgb": "#b07219",
+      "code": "public class Produto {\n  private String nome;\n  public Produto(String nome) {\n    this.nome = nome;\n  }\n}"
+    },
+    {
+      "id": "4",
+      "name": "App de Clima",
+      "description": "Aplicativo que mostra a previsão do tempo atual.",
+      "language": "Swift",
+      "rgb": "#f05138",
+      "code": "import SwiftUI\nText(\"Clima Atual: Ensolarado\")"
+    },
+    {
+      "id": "5",
+      "name": "Conversor de Temperatura",
+      "description": "Converte Celsius para Fahrenheit.",
+      "language": "C",
+      "rgb": "#555555",
+      "code": "#include <stdio.h>\nint main() {\n  float c = 25;\n  printf(\"%.2f\", c * 9 / 5 + 32);\n  return 0;\n}"
+    },
+    {
+      "id": "6",
+      "name": "Jogo da Adivinhação",
+      "description": "Usuário tenta adivinhar um número secreto.",
+      "language": "C++",
+      "rgb": "#f34b7d",
+      "code": "#include <iostream>\nint main() {\n  int num = 7;\n  std::cout << \"Adivinhe o número: \";\n}"
+    },
+    {
+      "id": "7",
+      "name": "Validador de Email",
+      "description": "Verifica se um e-mail é válido.",
+      "language": "C#",
+      "rgb": "#178600",
+      "code": "using System;\nclass Email {\n  static void Main() {\n    Console.WriteLine(\"Validar Email\");\n  }\n}"
+    },
+    {
+      "id": "8",
+      "name": "Blog em PHP",
+      "description": "Sistema simples de blog com postagens e comentários.",
+      "language": "PHP",
+      "rgb": "#4F5D95",
+      "code": "<?php\n  echo 'Olá, blog!';\n?>"
+    },
+    {
+      "id": "9",
+      "name": "Consulta de Clientes",
+      "description": "Executa uma consulta em banco de dados SQL.",
+      "language": "SQL",
+      "rgb": "#e38c00",
+      "code": "SELECT * FROM clientes WHERE ativo = 1;"
+    },
+    {
+      "id": "10",
+      "name": "Servidor Web",
+      "description": "Servidor HTTP simples em Go.",
+      "language": "Go",
+      "rgb": "#00ADD8",
+      "code": "package main\nimport \"fmt\"\nfunc main() {\n  fmt.Println(\"Servidor iniciado\")\n}"
+    },
+    {
+      "id": "11",
+      "name": "Chat em Tempo Real",
+      "description": "App de chat com sockets.",
+      "language": "JavaScript",
+      "rgb": "#f7df1e",
+      "code": "const socket = io();\nsocket.emit('mensagem', 'Oi!');"
+    },
+    {
+      "id": "12",
+      "name": "Bot Telegram",
+      "description": "Bot que responde mensagens automaticamente.",
+      "language": "Python",
+      "rgb": "#3572A5",
+      "code": "from telegram import Bot\nbot = Bot('TOKEN')\nbot.send_message(chat_id=123, text='Olá')"
+    },
+    {
+      "id": "13",
+      "name": "Gerador de PDF",
+      "description": "Cria relatórios PDF com dados.",
+      "language": "Java",
+      "rgb": "#b07219",
+      "code": "Document doc = new Document();\nPdfWriter.getInstance(doc, new FileOutputStream(\"relatorio.pdf\"));"
+    },
+    {
+      "id": "14",
+      "name": "Timer para Meditação",
+      "description": "App de cronômetro com som relaxante.",
+      "language": "Swift",
+      "rgb": "#f05138",
+      "code": "Timer.scheduledTimer(withTimeInterval: 60, repeats: false) {_ in print(\"Tempo esgotado\") }"
+    },
+    {
+      "id": "15",
+      "name": "Gerador de Senhas",
+      "description": "Cria senhas seguras aleatórias.",
+      "language": "C",
+      "rgb": "#555555",
+      "code": "#include <stdlib.h>\nprintf(\"Senha: %d\", rand());"
+    },
+    {
+      "id": "16",
+      "name": "CRUD de Alunos",
+      "description": "CRUD completo de alunos no terminal.",
+      "language": "C++",
+      "rgb": "#f34b7d",
+      "code": "class Aluno {\n  string nome;\n};"
+    },
+    {
+      "id": "17",
+      "name": "Conversor Moeda",
+      "description": "Converte reais em dólar com cotação ao vivo.",
+      "language": "C#",
+      "rgb": "#178600",
+      "code": "decimal reais = 10;\nConsole.WriteLine(reais / 5.2M);"
+    },
+    {
+      "id": "18",
+      "name": "Loja Virtual",
+      "description": "Plataforma de e-commerce básica.",
+      "language": "PHP",
+      "rgb": "#4F5D95",
+      "code": "<?php echo 'Bem-vindo à loja!'; ?>"
+    },
+    {
+      "id": "19",
+      "name": "Criação de Tabelas",
+      "description": "Cria estrutura inicial de banco de dados.",
+      "language": "SQL",
+      "rgb": "#e38c00",
+      "code": "CREATE TABLE produtos (id INT, nome VARCHAR(100));"
+    },
+    {
+      "id": "20",
+      "name": "Monitoramento de APIs",
+      "description": "Verifica se endpoints estão funcionando.",
+      "language": "Go",
+      "rgb": "#00ADD8",
+      "code": "resp, err := http.Get(\"https://api\")\nif err != nil { log.Fatal(err) }"
+    },
+    {
+      "id": "b15f",
+      "name": "Barra de pesquisa",
+      "description": "Um código para procurar algo via barra de pesquisa",
+      "language": "javascript",
+      "rgb": "#ffc21a",
+      "code": "async function searchPost() {\n    const searchContainer = document.getElementById(\"search\").value;\n\n    try {\n        const filtredPosts = await api.getPostsBySearch(searchContainer);\n        ui.renderCodes(filtredPosts);\n    } catch (error) {\n        alert(\"Erro ao buscar código por texto\")\n        throw Error\n    }\n}"
+    },
+    {
+      "id": "897b",
+      "name": "Sublinhado animado",
+      "description": "Linha sublinhado com animação",
+      "language": "javascript",
+      "rgb": "#0dadf2",
+      "code": ".header-search::after {\n    content: '';\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    width: 0;\n    height: 2px;\n    background-color: var(--font-color);\n    transition: width 0.3s ease;\n}\n\n.header-search:hover::after {\n    width: 100%;\n}"
+    }
+  ]
 }

@@ -27,6 +27,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0 50px 1px rgb(7, 55, 156);
+  transition: 0.2s;
+}
+
+.editor_background:hover {
+  transform: scale(1.01);
+}
+
+.editor_background:has(textarea:focus) {
+  transform: scale(1.01);
 }
 
 .editor_code_space {
@@ -74,13 +84,17 @@
 }
 
 .highlight_button {
-  background-color: #5081fb14;
+  background-color: #5080fb33;
   padding: 1rem;
   border-radius: 8px;
   text-align: center;
   color: var(--font-color);
   cursor: pointer;
   border: 1px solid #0b3466;
+}
+
+.highlight_button:hover {
+  border: 1px solid #10488d;
 }
 
 .highlight {
@@ -101,6 +115,13 @@
   height: 60vh;
   background-color: #00000029;
   border-radius: 1rem;
+  box-shadow: 0 0 50px 1px black;
+  transition: 0.2s all;
+}
+
+.post:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 50px 1px rgb(7, 55, 156);
 }
 
 .post_background {
